@@ -1,15 +1,57 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Login Page</title>
+	<script type="text/javascript">
+	function notinterested(){
+		window.close();
+	}
+	function CheckData(){
+		var x=document.getElementById('UsrName').value;
+		var y=document.getElementById('Pwd').value;
+
+		if (x=='harnek',y=='singh') 
+		{
+			//alert("Welcome");
+			window.open("formpage2.html");
+			window.close();
+
+		}
+		else
+		{
+			alert("Invalid Username And Password");
+		}
+	}
+
+	</script>
 </head>
 <body>
-		<label>
-			<h1> Login successful </h1>
-			<h2> Login successful </h2>
-			<h3> Login successful </h3>
-			<h4> Login successful </h4>
-			<h5> Login successful </h5>
-			<h6> Login successful </h6>
-		</label>
+<form>
+	<fieldset>
+		<input type="text" placeholder="enter something" required>
+	</fieldset>
+
+</form>
+<header style="background-color: black; width:100%; height:40px;color: white;text-align: center;padding: 1px;">
+Welcome To Login Page</header>
+<div class="HeaderPart" style="width:100%;height: 350px;">
+
+	<div class="InnerPart" style="width:30%; background-color: lightblue; height: 170px; border: 1px dashed black;margin-left:34%;margin-right: 34%;margin-top: 150px;">
+		<br>
+		<div class="username1" style="width:100%; font-size: 16px;">UserName 
+		<input type="text" id="UsrName" placeholder="Enter Your Username" style="font-size: 16px;" required><br><br></div>
+		
+		<div class="pwd12" style="width:100%;">Password<input type="Password" id="Pwd" Placeholder="Enter Your Password" style="font-size: 16px;" required><br><br></div>
+
+		<button type="button" id=Checksub onclick="CheckData()">Submit</button>
+		<button type="button" value="Sign Up" onclick="notinterested()">Not Interested</button>
+	</div>
+
+
+</div>
+
+<footer style="background-color: black; width:100%; height:40px; color: white; text-align: center; padding: 1px;">
+Thanks For Visiting !!</footer>
+
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Page</title>
+	<script>
+		function Previous(){
+			window.open("formpage2.html")
+			window.close();
+		}
+		function Next(){
+			window.close();
+		}
+	</script>
+</head>
+<body>
+<header style="background-color: black; width:100%; height:40px;color: white;text-align: center;padding: 1px;">
+Welcome To Form Page !!</header>
+<div class="PIData" style="background-color: lightblue; width:100%;margin-top: 10px; margin-bottom: 10px;">
+
+<form method="post" action="mailto:singhharnek369@gmail.com">
+<fieldset>
+<legend>Personal Information</legend>
+	<label>First Name :</label>
+	<input type="text" placeholder="Enter Your Name" required><br><br>
+
+	<label>Last Name :</label>
+	<input type="text" placeholder="Enter Your Last Name" required><br><br>
+	<label>Enter Age :</label>
+	<input type="number" placeholder="Enter Your Age" required min="2"><br><br>
+	<label>Cell Phone :</label>
+	<input type="number" placeholder="123-456-7890" min="10" required ><br><br>
+	<label>Address :</label>
+	<input type="text" placeholder="Enter Your Address" required><br><br>
+	<label>E-Mail :</label>
+	<input type="email" placeholder="Enter Your E-Mail" required/><br><br>
+	<label>Gender</label>
+	<input type="radio" name="gender1" value="male" >Male
+	<input type="radio" name="gender1" value="female">Female<br><br>
+	<input type="checkbox" checked="">Need More Money<br><br>
+	<input type="button" value="Previous Page" onclick="Previous()">
+	<input type="Submit" value="Submit And Mail">
+	<input type="button" value="Thank You !!" onclick="Next()">
+	
+	</fieldset>
+</form>
+</div>
+<footer style="background-color: black; width:100%; height:40px; color: white; text-align: center;padding: 1px;">
+Thanks For Visiting !!</footer>
+
+</body>
+</html>
