@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Back Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	var firstfunction=function (){
+		console.log ('hi this is first call back function')
+	};
+	var secondfunction=function (callback){
+		console.log('This is calling first function');
+		callback();
+	}
+	console.log (secondfunction(firstfunction));
+</script>
+
+</body>
+</html>

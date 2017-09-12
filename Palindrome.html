@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+	<script type="text/javascript">
+	function checktext(){
+		var x=document.getElementById('text123').value;
+		//console.log(x);
+		y=x.split('').reverse().join('');
+		if(x==y){
+			document.getElementById('result2').innerHTML = "Palindrome";
+		}
+		else{
+				document.getElementById('result2').innerHTML = "Not Palindrome";
+		}
+	}	
+
+
+	</script>
+</head>
+<body><div class="Pli12">Check Palidrome
+<input type="text" id="text123" ></input>
+<input type="button" id="check12" onclick="checktext()" value="Check"></input></div>
+<div id="result2"></div>
+
+</body>
+</html>

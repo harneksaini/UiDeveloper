@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id='demo'></p>
+<p id='demo1'></p>
+<p id='demo2'></p>
+<p id='demo3'></p>
+<p id='demo4'></p>
+<p id='demo5'></p>
+<p id='demo6'></p>
+<p id='demo7'></p>
+<p id='demo8'></p>
+<p id='demo9'></p>
+<p id='demo10'></p>
+<p id='demo11'></p>
+<script>
+function Arraylist(arr){
+		this.arr=arr;
+		this.index=0;
+	}
+	Arraylist.prototype.add=function(arrValue){
+       this.arr.push(arrValue);
+       return this.arr;
+	}
+	Arraylist.prototype.delete=function(arrValue){
+       this.arr.pop(arrValue);
+       return this.arr;
+	}
+	Arraylist.prototype.sort=function(arrValue){
+       this.arr.sort();
+       return this.arr;
+	}
+	Arraylist.prototype.reverse=function(arrValue){
+       this.arr.reverse();
+       return this.arr;
+	}
+	Arraylist.prototype.findindex=function(arrValue){
+       this.index=this.Arraylist.index(arrValue);
+        return this.index===-1 ? "Value not found" : this.index;
+    }
+    Arraylist.prototype.deleteitem= function(itemName){
+		this.index = this.arr.indexOf(itemName);
+		this.arr.splice(this.index,1);
+		return this.arr;
+	}
+	Arraylist.prototype.getitem= function(itemName){
+		this.index = this.arr.indexOf(itemName);
+		return this.index === -1 ? "Value not found" : this.arr[this.index];
+	}
+	var list=['prema','shakthi','ruksana','Amma'];
+	var listed= new Arraylist(list);
+	document.getElementById('demo').innerHTML=listed.add('ravigopal');
+	document.getElementById('demo1').innerHTML=listed.delete();
+	document.getElementById('demo2').innerHTML=listed.sort();
+	document.getElementById('demo3').innerHTML=listed.reverse();
+	document.getElementById('demo4').innerHTML=listed.deleteitem('prema');
+	document.getElementById('demo5').innerHTML=listed.getitem('ruksana');
+	// document.getElementById('demo4').innerHTML=listed.search('shakthi');
+
+	var list1=[1,2,3,4,5,6];
+	var listed1= new Arraylist(list1);
+	document.getElementById('demo6').innerHTML=listed1.add(9);
+	document.getElementById('demo7').innerHTML=listed1.delete();
+	document.getElementById('demo8').innerHTML=listed1.sort();
+	document.getElementById('demo9').innerHTML=listed1.reverse();
+	document.getElementById('demo10').innerHTML=listed1.deleteitem(5);
+	document.getElementById('demo11').innerHTML=listed1.getitem(3);
+</script>
+</body>
+</html>

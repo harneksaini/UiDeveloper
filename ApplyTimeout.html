@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+<script>
+	// var prog1 =angular.module('app',[]);
+	// prog1.controller('ctrl',function($scope){
+	// 	$scope.Fname='john',
+	// 	$scope.Lname='Deo';
+	// 	//$timeout(function() {
+	// 		setTimeout(function(){
+	// 		$scope.Fname='Akbar',
+	// 		$scope.Lname='Birbal';
+	// 		$scope.$apply();
+	// 	}, 3000);
+			
+	// });
+var prog1=angular.module('app',[]);
+prog1.controller('ctrl',['$scope','$timeout',function($scope,$timeout){
+	$scope.Fname='Hary',
+	$scope.Lname='Singh';
+	$timeout(function() {
+		$scope.Fname='Harnek',
+	$scope.Lname='Saini';
+	}, 3000);
+}]);
+</script>
+
+</head>
+<body>
+<div ng-controller='ctrl'>
+<h2>{{Fname}}</h2>
+<h2>{{Lname}}</h2>
+
+</div>
+</body>
+</html>

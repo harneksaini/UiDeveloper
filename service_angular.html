@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="App123">
+<head>
+	<title>Service</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+
+<script type="text/javascript">
+	var app=angular.module("App123",[]);
+	app.service('data',function(){
+		this.firstname='Harry'
+		
+	});
+	app.controller('ctrl',function($scope,data){
+		$scope.data=data;
+	});
+</script>
+<body>
+<div ng-controller='ctrl'>
+<h1>{{data.firstname}}</h1>
+</div>
+</body>
+</html>

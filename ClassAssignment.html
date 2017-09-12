@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+	<script>
+	var Elly=angular.module('App',[])
+	Elly.controller('Ctrl',['$scope',function($scope){
+		$scope.names=['Ami','Dhanish','Harry'];
+		$scope.AddToList=function(){
+			$scope.names.push($scope.newname);
+			$scope.newname="";
+		}
+
+		$scope.DeleteFromList=function(name){
+			var del=$scope.names.indexOf(name);
+			$scope.names.splice(del,1);
+			//$scope.names.splice($scope.names.indexof(name),1);
+		}
+	}]);
+	</script>
+</head>
+<body>
+<div ng-controller='Ctrl'>
+<ul ng-repeat="name in names">
+<li>{{name}}<a href="#" ng-click="DeleteFromList(name)">Remove</a></li>
+</ul>
+
+<input type="text" placeholder="Enter Name " ng-model="newname">
+<input type="button" value="Add Name" ng-click="AddToList()">
+</div>
+
+</body>
+</html>

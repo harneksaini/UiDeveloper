@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CallBack Function</title>
+</head>
+
+<body>
+<div class="Numbers">
+<input type="text" id="num1" placeholder="Enter Any Number"/>
+<input type="text" id="num2" placeholder="Enter Any Second Number"/>
+<input type="button" id="num3" value=Add onclick="add12()"/>
+<div id="show"></div>
+</div>
+</body>
+<script type="text/javascript">
+
+function addition(a,b){
+	return a+b;
+}
+var calc=function(n1,n2,callback)
+{
+	return callback(n1,n2);
+}
+// var calcu=calc(a,b,addition);
+
+function add12(){
+	var a= document.getElementById("num1").value;
+	var b= document.getElementById("num2").value;
+
+	 var calcu=calc(parseInt(a),parseInt(b),addition);
+	 //console.log(calcu);
+	document.getElementById("show").innerHTML=calcu;
+}
+</script>
+</html>

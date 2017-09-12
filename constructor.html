@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructon Function</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function student(name,contact)
+	{
+		this.name=name;
+		this.contact=contact;
+		return this;
+	}
+var dhanish=new student('dhanish',1234567890);
+var harry=new student('harry',1234567890);
+console.log(dhanish);
+console.log(harry);
+
+</script>
+
+</body>
+</html>

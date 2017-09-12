@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='angApp'>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<script>
+		var harry=angular.module('angApp',[])
+		harry.controller('ctrl123',function($scope){
+			console.log('hi');
+			})
+
+		.controller('ctrl234',function($scope){
+			$scope.people=[{name:'john',age:23},
+			{name:'dew',age:34},
+			{name:'harry',age:45},
+			{name:'hilla',age:44}];
+		})
+		.controller('ctrl2345',function($scope){
+			$scope.people = ['abcd','harry'];
+		});
+
+	</script>
+
+</head>
+
+<body>
+<div ng-controller='ctrl123' ng-init=firstname='john'>
+	{{firstname}}
+</div>
+
+<div ng-controller='ctrl2345'>
+<ul ng-repeat='person in people'>
+<li>{{person}}</li>
+</ul>
+</div>
+
+	<div ng-controller='ctrl234'>
+	<table style="border: 1px dashed black" >
+	<tr ng-repeat='person in people'>
+		<td style="border: 1px dashed black">{{person.name}}</td>
+		<td style="border: 1px dashed black">{{person.age}}</td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>

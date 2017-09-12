@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+
+
+
+	// 	function ArrayList(arr){
+	// 		this.arr=arr;
+	// 		this.index=0;
+	// 	}
+	// 	ArrayList.prototype.add=function(arrvalue){
+	// 		this.arr.push(arrvalue);
+	// 		return this.arr;
+	// 	}
+
+
+	// var list =[1,2,3,4,5,6,7,8,0];
+	// var listed=new ArrayList(list);
+	// document.write(listed.add(9));
+
+// ArrayList.prototype.delete=function(itemName){
+// 	this.index=this.arr.indexOf(itemName);
+// 	this.arr.splice(this.index,1);
+// }
+
+function Person(a,b){
+	this.a=a;
+	this.b=b;
+}
+function Man(){};
+Man.prototype=new Person('John','Deo');
+var m=new Man();
+console.log(m.a);
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>counter</title>
+</head>
+<body>
+<div id='div1'>0</div>
+<button type="button" onclick="func()">click</button>
+<script>
+//var counter=0;   // global variable
+function add(){
+	var counter=0;    //private variable 00
+	return counter+=1;
+}
+function func(){
+document.getElementById('div1').innerHTML=add();
+
+}
+</script>
+</body>
+</html>

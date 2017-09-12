@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var globl =10;
+	var a= function(){
+		var outer = 20;
+			var f2= function(){
+				var inner= 30;
+				return globl + outer + inner ;
+			}
+			return f2()
+		}
+		console.log(a());
+	
+
+</script>
+
+</body>
+</html>

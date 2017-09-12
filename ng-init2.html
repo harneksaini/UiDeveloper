@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>NG INIT</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script>
+        var app1= angular.module('app',[])
+        app1.controller('ctrl',function($scope){
+        	$scope.count=0;
+        	$scope.Myfunction=function(){
+        		if($scope.count >10)
+        		{
+
+        				alert("Stop Clicking Me !!");
+        				//document.write('Stop Clicking Me !!!');
+        		}
+        		else($scope.count++);
+        			
+        		}
+        	
+        })	
+
+</script>
+
+</head>
+<body>
+<div ng-init="Hello='Hi How you doing !!'">
+<h1>{{Hello}}</h1>
+<div ng-controller='ctrl'>
+<button type='button' ng-click="Myfunction()">click me </button>
+{{count}}
+</div>
+
+
+</body>
+</html>

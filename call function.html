@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+// 	function hello (Name,Name2){
+// 	return this.Name+"How Are you"+this.Name+"My age is"+this.Age+ 'and' +Name2;
+// }
+// 	var ABCD={Name:'Harnek',Age: 45};
+// 	// console.log(hello.call(ABCD,'singh'));
+// 	document.write(hello.apply(ABCD,['singh','Dhanish']));
+
+
+
+
+function tutionFee(fee){
+	var s=this.total-fee;
+	this.total=s;
+	return this.name+'balance is'+s;
+}
+	var john={name:'john',total: 500};
+	var dep={name:'dep',total: 400	};
+
+var getjobdone=tutionFee.bind(john,100);
+var getjobdone2=tutionFee.bind(dep,100);
+
+console.log(getjobdone());
+console.log(getjobdone2());
+
+
+
+
+</script>
+
+<body>
+
+</body>
+</html>

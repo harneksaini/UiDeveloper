@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Last Minute Shopping Site</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	
+	
+
+
+</script>    <!--jquery CDN -->
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+    	$('#btn').click(function(){
+		$('#table1').hide();
+		});
+    	
+    	$('#showbtn').click(function(){
+    		$('#divshow').show();
+    	});
+
+		$('#hidebtn').click(function(){
+    		$('#divshow').hide();
+    	});
+    	$('#togglebtn').click(function()
+    	{
+    		$('#divshow').toggle();
+    	});
+
+    	$('#Fade').click(function(){
+    		$('.MainInside1').fadeIn('1000').fadeOut(3000);
+    		$('.MainInside2').fadeIn('2000').fadeOut(4000);
+    		$('.MainInside3').fadeIn('5000').fadeOut(6000);
+    		$('.MainInside4').fadeToggle('slow');
+    	    });
+
+    	$('#Slidefunc').click(function(){
+    		$('.ShowSlide').slideDown(5000).slideUp(5000);
+    		$('.Slideup').animate({
+    			left:'250px',
+    		
+    		});
+
+    	});
+
+
+	});
+
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="C:\Users\Harnek\Desktop\Training Data\practice.css">
+<header id="TitleHeader">Last Minute Shopping Site</header>
+<div class="Main">
+
+	<div class="MainInsideLine1">
+		<div class="MainInside1"> 
+		<a href="http://www.google.com" class=image ><img src="welcome.jpg" width="150" height="150"></a>
+		
+		</div>
+
+		<div class="MainInside2"></div>
+	</div>
+			
+			<div class="MainInsideLine2">
+				<div class="MainInside3"></div>
+				<div class="MainInside4"></div>
+			</div>	
+
+</div>
+<button id="Fade" type="click"> Fade</button>
+
+<div class="button>"><button type="click" id="btn">click me </button>
+</div>
+
+
+<!--<tr:even>
+<tr>For More Help Click on this image </tr> 
+<tr>For More Help Click on this image</tr>
+<tr>For More Help Click on this image</tr>
+<tr>For More Help Click on this image</tr>
+For More Help Click on this image 
+</tr:even> -->
+
+
+
+
+<div id="divshow"><h1>Hi How are you today</h1></div>
+
+<button id="showbtn" type="click">Show</button>
+<button id="hidebtn" type="click">hide</button>
+<button id="togglebtn" type="click">Hide/Show</button>
+
+<div class="pagination">
+<a href="#">&laquo</a>
+<a href="www.gmail.com">1</a>
+<a href="www.yahoo.com">2</a>
+<a href="www.google.com">3</a>
+<a href="#">&raquo</a>
+</div>
+
+
+
+<div class="Slideup" style="width: 50%; max-height: 50px; position: relative;">How are you </div>
+
+
+<div class="ShowSlide" style="width: 100%; max-height: 50px; background-color: aqua; display:none;">Hi How are you</div>
+
+<button type="click" id="Slidefunc">Slide</button>
+
+
+
+
+
+
+<footer id="Footer">Contact us
+	
+</footer>
+</body>
+</html>

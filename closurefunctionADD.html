@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function add(a){
+			return function (b){
+				return a+b;
+			}
+		}
+	console.log(add(123)(123));
+
+
+	function mul (a){
+		return function(b){
+			return function (c){
+				return a*b*c;
+			}
+		}
+	}
+	
+	console.log(mul(1)(2)(3));
+
+	var bar=true;
+	console.log(bar+true);
+
+	var z=1, y=z= typeof y;
+	console.log(y);
+
+	function bar (){return 12;}
+	typeof bar();
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

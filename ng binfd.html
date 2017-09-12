@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="angapp">
+<head>
+	<title>NG Bind</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<script>
+	angular.module('angapp',[])
+	.controller('controller12',function($scope){
+		$scope.name='Harry';
+		});
+</script>
+<body>
+<div ng-controller='controller12' ng-bind='name'>{{name}}
+</div>
+
+</body>
+
+
+</html>

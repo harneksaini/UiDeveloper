@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anagram</title>
+	<script type="text/javascript">
+		function checktextA(){
+			var x1=document.getElementById('text12').value;
+			x3=x1.split('').sort('').join('');
+
+			var x2=document.getElementById('text123').value;
+			x4=x2.split('').sort('').join('');
+			if (x3==x4){
+				document.getElementById('result23').innerHTML = "Anagram";
+			}
+			else{
+				document.getElementById('result23').innerHTML = "Not Anagram";
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+
+
+<div class="Pli12">Check Anagram</div>
+<input type="text" id="text12" placeholder="Enter First Text"></input>
+<input type="text" id="text123" placeholder="Enter Second Text"></input>
+<input type="button" id="check12" onclick="checktextA()" value="Check"></input></div>
+<div id="result23"></div>
+
+</body>
+</html>

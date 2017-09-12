@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='angApp'>
+<head>
+
+	<title>Angular </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<script>
+	angular.module('angApp', [])
+		.controller('AngController',['$scope','$filter',function(a,b){
+		a.name='PreMa';
+		a.name=b('lowercase')(a.name);
+		}]);
+
+		// .controller('AngController2',function($scope){
+		// $scope.name2='PREMA';
+		// });
+	
+</script>
+<body>
+
+<div ng-controller="AngController">
+<input type="text" placeholder="Enter Your Name" ng-model="name">
+<div class="Name3"><h1>{{name|lowercase}}</h1></div>
+
+</div>
+
+<!-- <div ng-controller="AngController2">
+<input type="text" placeholder="Enter Your Name" ng-model="name2">
+	<div class="Name3">Name<h1>{{name2|lower}}</h1></div><p></p>
+	</div>
+</div> -->
+
+</body>
+</html>

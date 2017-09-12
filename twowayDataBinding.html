@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script>
+var twdb= angular.module('app',[])
+twdb.controller('ctrl',function($scope){
+	$scope.name='',
+	$scope.LastName=''
+
+});
+
+</script>
+</head>
+
+<body>
+<div ng-controller='ctrl'>
+<p>First Name<input type="text" ng-model="name"></p>
+<h2>{{'Hello ' + name + '  How Are You Today'}}</h2>
+</div>
+
+<div ng-controller='ctrl'>
+<p>LastName<input type="text" ng-model="LastName"></p>
+<h1>{{LastName}}</h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script array function</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function sayhello2(name2,age2)
+	{
+		return "<h3>Hi my name is </h3>" + this.name2 + 
+		"<br>and my age is " + this.age2 +
+		"<br><h3>My friend name is </h3>" + name2 +
+		"<br> and his age is " + age2;
+	}
+
+	var john2 = {name2:"Harnek",age2 : 40};
+
+	document.write(sayhello2.apply (john2,["Dhanish",40]));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+
+<link rel="stylesheet" type="text/css" href="C:\Users\Harnek\Desktop\Training Data\csssheet1.css">
+
+</head>
+<body>
+<div class="boxmodel">
+	<div class="backgroundimage">
+
+	<form name ="usrid">
+	<DIV CLASS="USERNAME"> 			<!--USERNAME--> 
+	<p> <span style="font-style: italic; ">Hi Everyone</span> Its a Login Page </p> 
+	<label><BR>USERNAME</LABEL> <INPUT TYPE="TEXT" PLACEHOLDER="ENTER USERNAME" NAME="UNAME" REQUIRED/></BR>
+	</DIV>
+
+	<DIV CLASS="PASSWORD">			<!--PASSWORD-->
+	<label><bR>PASSWORD</LABEL> <INPUT TYPE="PASSWORD" PLACEHOLDER="ENTER PASSWORD" NAME="PWD" REQUIRED/></BR>
+	</div>
+
+	<input TYPE="button" onclick="validateForm()" value="login"/>
+	<BUTTON TYPE="reset">cancel</BUTTON>
+	<a href="http://www.google.com">
+
+	<p style="background-color:red";>
+For More Information Click Here</p>   <!--inline css style-->
+</a>
+
+
+
+
+<img src="welcome.jpg" width="150" height="150">
+<table border="1">
+<tr>
+	<th>column One</th>
+	<th>Column Second</th>
+	<th>column Third</th>
+	
+</tr>
+	<tr>
+	<td>Row 1 First2</td>
+	<td>Row 1 Second2</td>
+	<td>Row 1 Third2</td>
+</tr>
+
+<tr>
+	
+	<td>First3</td>
+	<td>Second3</td>
+	<td>Third3</td>
+</tr>
+<ol type="i">
+<div class="textdeco">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+</div>
+
+
+
+</table>	
+</form>
+
+
+<script>
+function validateForm()
+{
+	var x = document.forms["usrid"]["UNAME"].value;
+	var y = document.forms["usrid"]["PWD"].value;
+	if (x == "harnek" && y == "singh")
+	{
+		window.open("loginpage.html")
+		}
+			else 
+				{
+					alert("invaild username and password");
+				}
+
+		
+	
+}	
+
+</script>
+
+</div>
+</div>
+</body>
+</html>

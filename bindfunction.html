@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ClassWork</title>
+</head>
+<body>
+<script type="text/javascript">
+	function getmonthlyfee (fee){
+		var s = this.total-fee;
+		this.total=s;
+		return this.name + 'have balance' + s;
+	}
+	var john={name:'john',total:500};
+	var johngetmonthlyfee = getmonthlyfee.bind(john,100);
+	console.log(johngetmonthlyfee());
+console.log(johngetmonthlyfee());
+console.log(johngetmonthlyfee());
+
+</script>
+
+
+</body>
+</html>

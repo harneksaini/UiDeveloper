@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app='angApp'>
+<head>
+	<title>Angular Starting</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body>
+
+<div ng-controller='AngController2'>
+	<input placeholder='First Name' type='text' ng-model='Fname'><p></p>
+<input placeholder='Last Name' type='text' ng-model='Lname'><p></p>
+
+
+
+
+	<div class="FirstName" style="border: 1px solid;" >First Name <h1>{{Fname}}</h1></div><p></p>
+
+
+	<div class="LastName">Last Name <h1>{{Lname}}</h1></div><p></p>
+</div>
+
+	<div ng-controller='AngController2'>
+	<input placeholder='Middle Name' type='text' ng-model='Mname'><p></p>
+	<div class="MName">Middle Name <h1>{{Mname}}</h1></div><p></p>
+	</div>
+	
+	
+<script>
+	var show=angular.module('angApp',[]);
+	show.controller('AngController',function($scope){
+		$scope.Fname='Harnek';
+		$scope.Lname='Singh';
+		});
+
+		show.controller('AngController2',function($scope){
+		$scope.Mname='Hark';	
+	});
+</script>
+	
+
+
+
+
+
+</body>
+</html>

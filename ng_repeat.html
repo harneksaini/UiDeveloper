@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+	<title>Ng Repeat</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<script type="text/javascript">
+	var app=angular.module('App',[]);
+	//var app2=angular.module('App',[]);
+	app.controller('ctrl',['$scope',function($scope){
+		$scope.names=['john','Deo','abcd'];
+	}])
+
+	app.controller('ctrl2',['$scope',function($scope){
+		$scope.people=[
+		{ name:'Harnek',
+			age:117,
+			job:'UGC department'}
+		]
+	}]);
+</script>
+<body>
+<div ng-controller='ctrl'>
+<input type="text" ng-model="harry">
+<ul ng-repeat="name in names|filter:harry">
+<li>{{name|uppercase}}</li>
+</ul>
+</div>
+
+<div ng-controller='ctrl2'>
+<table border=1px>
+	<tr ng-repeat="person in people">
+		<td>{{person.name}} </td>
+		<th>{{person.age}} </th>
+		<th>{{person.job}}</th>
+	</tr>
+</table>
+</div>
+
+</body>
+</html>

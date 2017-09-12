@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype</title>
+</head>
+<body>
+<script type="text/javascript">
+	function person(firstname,lastname)
+	{
+		this.firstname2=firstname;
+		this.lastname2=lastname;
+		return this;
+	}
+	function name2 (){}
+		name2.prototype=new person('Harry','jandu');
+		var r=new name2();
+		console.log(r.firstname2);
+		console.log(r.lastname2);
+	
+
+
+</script>
+
+</body>
+</html>

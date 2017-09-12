@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+	<title>NG Show Hide</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+	angular.module('app',[])
+	.controller('ctrl',function($scope){
+		$scope.name='';
+		$scope.character=5;
+	})
+</script>
+</head>
+<body>
+<div controller="ctrl">
+<input type="text" ng-model="name">
+<div ng-if="name.length!=character">
+Enter atleast 5 character
+</div>
+</div>
+
+</body>
+</html>

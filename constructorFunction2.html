@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructor Function</title>
+	<script type="text/javascript">
+	function Names(FirstName,LastName)
+	{
+		this.FirstName=FirstName;
+		this.LastName=LastName;
+		this.FullName=function(){
+			return this.FirstName+" "+this.LastName;
+			return this;
+		}
+	}
+
+	var harry=new Names('Harnek','Singh');
+	var harry2=new Names('Harnek2','Singh2');
+	
+	console.log(harry.FullName());
+	console.log(harry2.FullName());
+	
+	document.write(harry.FullName());
+	document.write(harry2.FullName());
+	
+
+
+
+</script>
+</head>
+<body>
+<div id="Fullname">
+</div>
+
+</body>
+</html>

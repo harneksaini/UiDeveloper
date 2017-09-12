@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+
+
+
+	var jq=$.noConflict();
+	jq(document).ready(function(){
+
+		jq("#DatePicker").datepicker({
+			changeMonth:true,
+			changeYear:true
+		});
+		jq('#accordion').accordion();
+		jq("#RadioButn").click(function(){
+			jq(".ShowText").show();			
+		});
+
+		jq("#RadioButn2").click(function(){
+			jq(".ShowText").hide();
+		});
+		jq("").Parent().css
+	});
+
+	function clck(){
+		document.getElementById('div123').innerHTML='Hello';
+	};
+
+
+</script>
+
+	<title>Calender Project</title>
+	
+</head>
+
+
+<body>
+
+
+<div class="DatePickerBody" style="width:100px, height:100px">
+<input type="text" id="DatePicker"> Date Picker</input>
+</div>
+
+<input type="radio" id="RadioButn" name="Text12"/>Yes
+<input type="radio" name="Text12" id="RadioButn2" checked />No
+<div class="ShowTextClass" style="width:100%;">
+<input class="ShowText" type="text" style="width:100px; height:100px; display: none;" />
+<input class="ShowText" type="submit" style="display: none;" />
+</div>
+
+<div id="accordion">
+	<h3>History</h3>
+	<div class="History"><p style="column-count: 4;">This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want This is the history page you can find out what ever you want </p>
+<	</div>
+
+	<h3>Science</h3>
+	<div class="Science"><p>This is the Science page you can find out what ever you want</p>
+	</div>
+
+	<h3>Physical</h3>
+	<div class="Physical"><p>This is the Physical page you can find out what ever you want</p>
+	</div>
+
+</div>
+
+
+<div class="row" style="background-color: red;">kkjlrlkrkflrkkfnlfnlk
+<div class="col-2" style="background-color: yellow">lfwlfweflwfnlfnflk
+</div>
+<div class="row" style="background-color: blue">
+</div>
+<div id="div123"></div>
+<button type='button' onclick='clck()'>click me</button>
+
+
+
+
+
+</body>
+</html>
+
+<style type="text/css">
+*{
+	 background-color: red;
+}
+	@media screen and (min-width: 480px) {
+    *{
+        background-color: lightblue;
+    }
+}
+
+
+</style>

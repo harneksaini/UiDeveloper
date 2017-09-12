@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script>
+	angular.module('app',[])
+	.controller('ctrl',function($scope){
+		$scope.name='john',
+		$scope.name1='Munsakwangru';
+
+	});
+</script>
+</head>
+<body>
+<div ng-controller='ctrl'>
+<h2>{{name}}</h2>
+</div>
+
+<div ng-controller='ctrl' class="Name12">
+<h2>{{name1}}</h2>
+</div>
+<div ng-app="">
+<p>address<input type="text" ng-model="address"></p>
+<h1>My {{address}}</h1>
+</div>
+
+</body>
+</html>
